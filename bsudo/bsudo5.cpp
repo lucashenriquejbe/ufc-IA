@@ -130,11 +130,11 @@ void solve(bitset<9> values[9][9])
 			}
 		}
 
-	// if (resolveu)
-	// {
-	// 	converte(values, res);
-	// 	return;
-	// }
+	if (resolveu)
+	{
+		converte(values, res);
+	 	return;
+	}
 
 	for(i = 0; i < 9; ++i)
 	{
@@ -180,7 +180,7 @@ int main()
 		solve(values);
 		printf("%Lf\n", (clock() - inicio)/(long double)(CLOCKS_PER_SEC/1000.0));
 
-		//printf("%s", res);
+		printf("%s", res);
 
 	}
 
